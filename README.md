@@ -12,7 +12,7 @@
   <img src="insights/potholes/confusion_matrix.png" width="200"/>
   <img src="insights/potholes/PR_curve.png" width="200"/>
   <img src="insights/potholes/R_curve.png" width="200"/>
-  <img src="insights/potholes/results.pngg" width="200"/>
+  <img src="insights/potholes/results.png" width="200"/>
 </p>
 <br />
 
