@@ -26,35 +26,33 @@ def plot_one_box(x, img, color=None, label=None, line_thickness=None, Inverted=F
         )
 
 # Using readlines()
-file1 = open('sample.csv', 'r')
-Lines = file1.readlines()
+
+Lines = [[1,"1.jpg","GRAFFETI",925,537,1056,660]]
 
 count = 0
 # Strips the newline character
 for line in Lines:
-    if count == 0:
-        count += 1
-        continue
+
 
     # if count == 100:
     #     break
 
     print(line)
 
-    file_id_path = line.split(',')[1]
+    file_id_path = line[1]
     print(file_id_path)
     # open image in cv2
-    img = cv2.imread("images/" + file_id_path)
+    img = cv2.imread(file_id_path)
     h, w, c = img.shape
-    cat = line.split(',')[2]
-    xmax = int(float(line.split(',')[3]) * 2)
-    xmin = int(float(line.split(',')[4]) * 2)
-    ymax = int(float(line.split(',')[5]) * 2)
-    ymin = int(float(line.split(',')[6]) * 2)
+    cat = line[2]
+    xmax = int(float(line[3]))
+    xmin = int(float(line[4]))
+    ymax = int(float(line[5]))
+    ymin = int(float(line[6]))
     # plot the box
-    plot_one_box([xmin, ymin, xmax, ymax], img, color=(0, 255, 0), label=cat, line_thickness=2)
+    plot_one_box([xmax, xmin, ymax, ymin], img, color=(0, 255, 0), label=cat, line_thickness=2)
     # save the image
     # you might need to create the folder "drawn" first!
     cv2.imwrite("drawn/" + file_id_path, img)
-    print("Line {}: {}".format(count, line.strip()))
+
     count += 1
