@@ -11,8 +11,9 @@ for each in txtfiles:
         for line in lines:
             x = " ".join(line.split(" ")).replace("\n", "").split(" ")
             if x[0] != '2':
-                continue
+
                 print(x)
+                continue
                 print("Error")
                 exit(0)
             x[0] = 0
