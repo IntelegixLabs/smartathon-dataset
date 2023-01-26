@@ -1,5 +1,19 @@
 # Smarathon-Dataset
 
+Object Detection Dataset to classify 
+
+● GRAFFITI
+● FADED SIGNAGE
+● POTHOLES
+● GARBAGE
+● CONSTRUCTION ROAD
+● BROKEN_SIGNAGE
+● BAD STREETLIGHT
+● BAD BILLBOARD
+● SAND ON ROAD
+● CLUTTER_SIDEWALK
+● UNKEPT_FACADE
+
 ## 1. Potholes
 
 ### Metrics 
