@@ -2,8 +2,8 @@
 
 Object Detection Dataset to classify 
 
-● GRAFFITI
-● FADED SIGNAGE
+● GRAFFITI 
+● FADED SIGNAGE 
 ● POTHOLES
 ● GARBAGE
 ● CONSTRUCTION ROAD
